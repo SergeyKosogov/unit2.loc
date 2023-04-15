@@ -1,10 +1,8 @@
 <?php
-    if (isset($_POST["userName"]) && isset($_POST["eduForm"]) && isset($_POST["userName"]) &&
-    isset($_POST["courses"])) {
+    if (isset($_POST["userName"]) && isset($_POST["eduForm"]) && isset($_POST["courses"])) {
 
         $name = htmlentities($_POST["userName"]);
         $eduForm = htmlentities($_POST["eduForm"]);
-        $hostel = "нет";
         $courses = $_POST["courses"];
 
         $output = "
